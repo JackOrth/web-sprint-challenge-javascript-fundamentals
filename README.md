@@ -29,13 +29,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
-2. Explain the difference between a callback and a higher order function.
+    While both `.forEach` and `.map` call a provided function on the elements of the array, `.map` returns values to a new array while `.forEach` is more just useful for previewing data because it does not actually push anything to a new array. 
 
-3. Can you explain what a closure is and how you used it in the counter function? 
+2. Explain the difference between a callback and a higher order function.
+    
+    The main difference between a callback function and a higher order function is callback functions are functions that are passed into other functions as arguments and higher order functions are functions that receive other functions as arguments. 
+
+3. Can you explain what a closure is and how you used it in the counter function?
+
+    A closure is when you have an inner function and that inner function then reaches out of its scope and uses a variable that has been defined in an outer function. In the counter a function a for loop is used because the variable total is used within the for loop is declared outside of it in the outer function. 
 
 4. Describe the four principles of the 'this' keyword.
 
+    1. Window Binding - In the case that none of the other rules apply, the value of the "this" keyword will be the window object. 
+    
+    2. Implicit Binding - Implicit Binding applies to objects with methods, and whenever a function is called by a preceding dot, whatever is left of the dot is what "this" refers to.
+    
+    3. New Binding - New Binding occurs whenever a constructor function is used to create an object. "this" refers to the specific instance of the object that has been created and is then returned by the constructor function. 
+    
+    4. Explicit Binding - Explicit binding is inquired when you used call(), bind(), and apply(). Whenever these methods are used, the function is immediately invoked and this is directly defined.
+
 5. Why do we need super() in an extended class?
+
+    We need super() in an extended class because we need it to be called from within the constructor function to pass any new attributes back up the the constructor of the parent object. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
